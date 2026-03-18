@@ -1,0 +1,62 @@
+/* Base */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffe4ec, #fff6f9);
+}
+
+/* Progress Bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    height: 6px;
+    width: 0%;
+    background: pink;
+    z-index: 1000;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: pink;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Buttons */
+.nav-buttons a {
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Cards */
+.card {
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+}
+
+/* Images */
+img {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
