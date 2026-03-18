@@ -1,0 +1,145 @@
+/* 🌸 Base Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffe4ec, #fff6f9);
+    color: #444;
+    overflow-x: hidden;
+}
+
+/* ✨ Scroll Progress Bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 0%;
+    background: linear-gradient(to right, #ff69b4, #ffc0cb);
+    z-index: 999;
+}
+
+/* 🎀 Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 192, 203, 0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #b03060;
+}
+
+/* 💗 Cute Button Tabs */
+.nav-buttons a {
+    background: #fff0f5;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #b03060;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(255,182,193,0.4);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.nav-buttons a:hover {
+    background: #ffb6c1;
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* 🌸 Card Sections */
+.card {
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 0 10px 25px rgba(255,182,193,0.3);
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Stagger animation */
+.card:nth-of-type(1) { animation-delay: 0.2s; }
+.card:nth-of-type(2) { animation-delay: 0.4s; }
+.card:nth-of-type(3) { animation-delay: 0.6s; }
+.card:nth-of-type(4) { animation-delay: 0.8s; }
+.card:nth-of-type(5) { animation-delay: 1s; }
+
+/* 💖 Headings */
+h1 {
+    color: #ff69b4;
+    font-family: 'Playfair Display', serif;
+}
+
+/* 🖼️ Images */
+img {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255,182,193,0.4);
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.08) rotate(-1deg);
+}
+
+/* ✨ Floating Sparkles */
+.sparkles::before,
+.sparkles::after {
+    content: "✨ ✦ ✧ ✨ ✦";
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+    color: #ffc0cb;
+    opacity: 0.6;
+    animation: sparkleMove 12s linear infinite;
+}
+
+.sparkles::after {
+    top: 50%;
+    animation-duration: 18s;
+}
+
+/* Sparkle animation */
+@keyframes sparkleMove {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+/* 🌸 Fade In Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 💗 References styling */
+#references p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #b03060;
+}
